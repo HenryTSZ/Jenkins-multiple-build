@@ -1,0 +1,70 @@
+{
+  "name": "relative2alias",
+  "displayName": "relative2alias",
+  "description": "auto change relative path to alias path",
+  "version": "0.0.1",
+  "publisher": "HenryTsz",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/HenryTSZ/relative2alias.git"
+  },
+  "homepage": "https://github.com/HenryTSZ/relative2alias",
+  "bugs": "https://github.com/HenryTSZ/relative2alias/issues",
+  "keywords": [
+    "refactor",
+    "javascript",
+    "typescript",
+    "relative",
+    "alias",
+    "path",
+    "vue",
+    "react",
+    "webpack",
+    "别名跳转"
+  ],
+  "icon": "img/logo.png",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.73.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:relative2alias.relative2alias"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "relative2alias.relative2alias",
+        "title": "relative2alias"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "test": "vitest --run"
+  },
+  "devDependencies": {
+    "@types/babel__traverse": "^7.18.2",
+    "@types/glob": "^8.0.0",
+    "@types/mocha": "^10.0.0",
+    "@types/node": "16.x",
+    "@types/vscode": "^1.73.0",
+    "@typescript-eslint/eslint-plugin": "^5.42.0",
+    "@typescript-eslint/parser": "^5.42.0",
+    "@vscode/test-electron": "^2.2.0",
+    "eslint": "^8.26.0",
+    "glob": "^8.0.3",
+    "mocha": "^10.1.0",
+    "typescript": "^4.8.4",
+    "vitest": "^0.24.5"
+  },
+  "dependencies": {
+    "@babel/parser": "^7.20.2",
+    "@babel/traverse": "^7.20.1"
+  }
+}
