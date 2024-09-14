@@ -46,7 +46,8 @@
     "vscode:prepublish": "npm run compile",
     "compile": "tsc -p ./",
     "watch": "tsc -watch -p ./",
-    "test": "vitest --run"
+    "test": "vitest --run",
+    "build": "echo 'build B'"
   },
   "devDependencies": {
     "@types/babel__traverse": "^7.18.2",
